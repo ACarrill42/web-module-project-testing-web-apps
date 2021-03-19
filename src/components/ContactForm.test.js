@@ -75,7 +75,7 @@ test('renders "lastName is a required field" if an last name is not entered and 
   const submitButton = screen.getByRole('button');
   userEvent.click(submitButton);
 
-  expect(errorMessageLastName).toBeInTheDocument()
+  expect(errorMessageLastName).toBeInTheDocument();
 });
 
 test('renders all firstName, lastName and email text when submitted. Does NOT render message if message is not submitted.', async () => {
